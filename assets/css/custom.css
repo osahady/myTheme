@@ -273,6 +273,10 @@ Blue Gray:  #3e4249
         padding: 80px 0;
     }
     
+    section.main-content {
+        padding: 40px 0;
+    }
+    
     .section-header {
         text-align: center;
     }
@@ -545,6 +549,17 @@ Blue Gray:  #3e4249
         padding: 20px 0 0;
         border-top: solid 1px #eee;
     }
+    /* ===========RESOURCES============ */
+    
+    .resource {
+        width: 31.3333333%;
+        float: left;
+        margin: 0 3% 40px 0;
+    }
+    
+    .resource:nth-child(3n) {
+        margin-right: 0;
+    }
     /* ===========CUSTOME ICON SPRITES============ */
     
     i.ci {
@@ -602,6 +617,35 @@ Blue Gray:  #3e4249
         width: 100%;
         padding: 6px 12px;
     }
+    
+    input[type="submit"],
+    button[type="submit"] {
+        display: inline-block;
+        margin-bottom: 0;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.33;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: none;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+    }
+    
+    input[type="submit"]:hover,
+    button[type="submit"]:hover {
+        outline: none;
+        border: none;
+        background: #aaa;
+    }
     /* ===========MEDIA QUERIES============ */
     
     @media screen and (max-width: 991px) {
@@ -621,6 +665,11 @@ Blue Gray:  #3e4249
         #featurette iframe {
             height: 240px;
         }
+        .resource {
+            width: 48%;
+            margin-right: 2%;
+            min-height: 800px;
+        }
     }
     
     @media screen and (max-width: 568px) {
@@ -631,5 +680,10 @@ Blue Gray:  #3e4249
         }
         #instructor .num span {
             font-size: 16px;
+        }
+        .resource {
+            width: 100%;
+            margin-right: 0;
+            min-height: 0;
         }
     }
